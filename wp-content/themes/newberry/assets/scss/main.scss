@@ -1,1 +1,82 @@
-div{color: red}
+@import 'reset';
+@import 'vendor/bootstrap-grid.min.css';
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header {
+    section {
+        padding: 20px;
+        &:nth-child(1) {
+            background-color: #444;
+            ul li {
+                color: #fff;
+            }
+        }
+        &:nth-child(2) {
+            background-color: #ccc;
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
+.menu-menuprincipal-container ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+        a {
+            padding: 20px;
+            font-size: 20px;
+        }
+    }
+}
+.menu-social-container ul {
+    display: flex;
+    li {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        font-size: 32px;
+        margin: 2px;
+
+        a {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: 40px;
+            overflow: hidden;;
+        }
+    }
+}
+
+footer {
+    section {
+        padding: 20px;
+        background-color: #333;
+        ul li {
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}
+
+main {
+    padding: 20px 0;
+}
+aside {
+    padding: 20px 0;
+}

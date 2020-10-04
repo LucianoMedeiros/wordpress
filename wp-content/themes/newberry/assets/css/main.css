@@ -1,1 +1,103 @@
-div{color:red}/*# sourceMappingURL=main.css.map */
+@import 'vendor/bootstrap-grid.min.css';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+header section {
+  padding: 20px;
+}
+header section:nth-child(1) {
+  background-color: #444;
+}
+header section:nth-child(1) ul li {
+  color: #fff;
+}
+header section:nth-child(2) {
+  background-color: #ccc;
+}
+header section:nth-child(2) .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-menuprincipal-container ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-menuprincipal-container ul li a {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.menu-social-container ul {
+  display: flex;
+}
+.menu-social-container ul li {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  font-size: 32px;
+  margin: 2px;
+}
+.menu-social-container ul li a {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: 40px;
+  overflow: hidden;
+}
+
+footer section {
+  padding: 20px;
+  background-color: #333;
+}
+footer section ul li {
+  color: #fff;
+}
+footer section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section p {
+  color: #fff;
+}
+
+main {
+  padding: 20px 0;
+}
+
+aside {
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
