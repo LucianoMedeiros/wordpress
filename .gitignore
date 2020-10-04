@@ -4,12 +4,15 @@ wp-includes/
 /*.php
 /*.html
 /*.txt
+/.htaccess
 !wp-content/
 
 # ignore everything in the wp-content except the "plugins" and "theme/newberry" directories
-wp-content/*
-!wp-content/plugins
-!wp-content/themes/newberry
+wp-content/languages/
+wp-content/themes/twentynineteen/
+wp-content/themes/twentyseventeen
+wp-content/themes/twentytwenty
+wp-content/uploads/
 
 # ignore log files and databases
 *.log
